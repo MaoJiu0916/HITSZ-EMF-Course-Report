@@ -1,2 +1,13 @@
 # HITSZ-EMF-Course-Report
-Use latex to typeset the EMF course report for the fall 2021 semester.
+电磁场老师的本意是希望我们通过《课程报告》的撰写过程，学会使用Viso与Mathtype两个软件的基本操作，为以后的毕设以及科研论文撰写打下基础。
+
+我的课程报告本来是用word写的，公式用的是axmath，示意图用的是axglyph。
+
+有一天突发奇想，猛然记起来自己学过一点latex的基础知识，就想着试试用latex排版一下自己的课程报告，主要处理一些细节：
+
++ 示意图和分割线用tikz库绘制，学习了一些基础的语法就可以完成。
++ 插入emoji表情时需要更换为lualatex引擎。
+
+如果你也想试试，不妨动手试一试呗！
+
+
