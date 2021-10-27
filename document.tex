@@ -1,0 +1,101 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{ctex}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{emoji}
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\title{2021秋《电磁场》课程EE2003课程报告}
+\author{姓名：猫九 学号:11111111  19级搬砖类}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\begin{tikzpicture}
+		\draw[dashed][very thick] (0,0)--(14.64,0);
+	\end{tikzpicture}	
+\end{center}
+\noindent \textbf{例1-13}一点电荷$q$放置在内表面半径为$b$，厚度为$c$的导体球壳内，点电荷与球心的距离为$a$。分别求在球壳接地和不接地的两种情况下点电荷所受的力。
+ 
+\noindent \textbf{解：} 
+
+\noindent （1） 当球壳接地时，如图所示:
+
+\begin{center}
+		\begin{tikzpicture}	
+		\draw[dashed] (0,0) circle [radius=1.5];
+		\draw[thick] (0,0) circle [radius=2.5];
+		\draw[dash dot dot] (-4,0) -- (4,0);
+		\draw[-latex][very thick] (0,0) node[below] {$O$} -- node[above] {$a$}  (-1,0) node[above] {$q$} ;
+		\fill (-1,0) circle[radius=2pt];  
+		\draw[-latex][very thick] (0,0) -- node[above left] {$b$} (1.061,1.061); 
+		\draw[latex-latex][very thick] (1.061,1.061) -- node[above left] {$b$} (1.768,1.768); 
+		\coordinate (S1) at (-1.768,-1.768); 
+		\draw[thick] (S1) -- (-1.768,-3.2328);
+		\draw[thick] (-2.068,-3.2328) -- (-1.468,-3.2328);
+		\draw[thick] (-1.968,-3.3328) -- (-1.568,-3.3328);
+		\draw[thick] (-1.868,-3.4328) -- (-1.668,-3.4328);		
+	\end{tikzpicture}
+\end{center}
+
+\noindent 由于球壳接地，所以球壳外的电场$E=0$ ,求点电荷所受的力时，可以使用镜像法。由教材42页的例题可知，点电荷附近接地导体球的影响，可以由位于距离球心$b$处的镜像电荷$(-q^{'})$的来表示。
+
+\noindent 在本题中，只需要求球壳内的电场强度。球壳的厚度$c$不产生影响。在球壳外距离球心$$d=\frac{R^2}{a}=\frac{b^2}{a}$$
+处放置一个电荷，如图所示
+
+$$
+q^{\prime}=-\frac{d}{b}q=-\frac{b}{a}q
+$$
+
+\begin{center}
+	\begin{tikzpicture}	
+		\draw[dashed] (0,0) circle [radius=1.5];
+		\draw[thick] (0,0) circle [radius=2.5];
+		\draw[dash dot dot] (-4,0) -- (4,0);
+		\draw[-latex][very thick] (0,0) node[below] {$O$} -- node[above] {$a$}  (-1,0) node[above] {$q$} ;
+		\fill (-1,0) circle[radius=2pt];  
+		\draw[-latex][very thick] (0,0) -- node[above left] {$b$} (1.061,1.061); 
+		\draw[latex-latex][very thick] (1.061,1.061) -- node[above left] {$b$} (1.768,1.768); 
+		\coordinate (S1) at (-1.768,-1.768); 
+		\draw[thick] (S1) -- (-1.768,-3.2328);
+		\draw[thick] (-2.068,-3.2328) -- (-1.468,-3.2328);
+		\draw[thick] (-1.968,-3.3328) -- (-1.568,-3.3328);
+		\draw[thick] (-1.868,-3.4328) -- (-1.668,-3.4328);
+		\draw[red]	(0,0) -- (0,-0.8);	
+		\fill (3,0) circle[radius=2pt]; 
+		\draw[red] (3,0) node[above][black] {$q^{'}$} -- (3,-0.8);
+		\draw[latex-latex][very thick][red] (0,-0.5) -- node[below][black] {$d$} (3,-0.5); 
+	\end{tikzpicture}
+\end{center}
+
+\noindent 该电荷位于球心和点电荷$q$的连线上。它对点电荷$q$的作用力就是球壳对点电荷$q$的作用力，大小为
+$$
+F=\frac{q^{\prime}q}{4\pi \varepsilon _0\left( d-a \right) ^2}=-\frac{abq^2}{4\pi \varepsilon _0\left( b^2-a^2 \right) ^2}
+$$
+\noindent 其中负号表示两个电荷之间是异种电荷，是吸引力。
+
+~\\
+\noindent（2） 对于球壳不接地的情况，球壳外表面产生的感应电荷在球壳内不产生电场，球壳表面的感应电荷也可以用$(-q^{'})$来代替，球壳内电场强度的分布不变。点电荷$q$受到的力和球壳接地时受到的力相同。
+
+~\\
+\noindent \textbf{本题目考查知识点：}
+\begin{enumerate}
+	\item[1.] \textbf{镜像法}求导体球面问题，教材P42，公式（1-78）
+	\item[2.] 静电场的\textbf{唯一性定理}，教材P28
+	\item[3.] \textbf{库仑定律}	
+\end{enumerate}
+
+~\\
+
+
+\noindent \textbf{对本学期《 电磁场》课程及授课教师的意见和建议:}
+
+由老师上的《 电磁场》课程非常好，由老师讲很课细致，而且上课的过程中还讲述与课程相关的故事和自己的经历，双语教学也让我们体验到了不一样的上课方式，从电磁场这门课程中不仅学到了专业知识，也领会到了其他的方方面面。
+
+由老师yyds！\emoji{+1}
+
+唯一遗憾的是最后几节课没有能在线下听由老师讲课，以及之后不确定能不能在深圳再见到由老师。
+
+对于课程的建议：希望教务部在排课程的时候不要一周排三节课，感觉没开学几天就结课了,\emoji{joy},而且周五上两节电磁场课程比较难顶。
+	
+\end{document}
